@@ -3,32 +3,26 @@ html {
 
 }
 
-#mainNav {
-    font-family: 'PT Sans', sans-serif;
+body nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+}
+
+.banner-image {
+    background-image: url('imgs/anime-2019011119-laginate.jpg');
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.navbar .container .navbar-brand {
+    font-size: 2rem;
+}
+
+.description div {
+    font-family: 'Montserrat', sans-serif;
     background-color: #e0afa0;
-
-}
-
-#mainNav .navbar-brand {
-    font-size: 2em;
-    transition: color 250ms ease-in-out;
-}
-
-#mainNav .navbar-brand:hover {
-    color: #F4F3EE;
-}
-
-#navbarNav a {
-    font-size: 1.75em;
-    transition: color 250ms ease-in-out;
-    color: #F4F3EE;
-}
-
-#navbarNav a:hover {
-    color: white;
-}
-
-#mainNav .badge {
-    font-weight: 100;
-    background-color: #BCB8B1;
+    border-radius: 90px;
 }
