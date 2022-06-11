@@ -27,7 +27,9 @@ body nav {
     border-radius: 7px;
 }
 
-.description {}
+span {
+    font-weight: bold;
+}
 
 .headerDescText {
     width: 50%;
