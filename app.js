@@ -1,12 +1,14 @@
 
-let randomizeButton = document.getElementsByClassName('randomActivate');
-function testButton() {
-    alert('hello!');
-}
+const randomizeButton = document.querySelector('.randomActivate');
 
+function changeImage() {
+    const champImg = document.getElementById("champImg")
+    if (champImg.src.match("imgs/champions/amumu_LoT.jpg")) {
+        champImg.src = 'imgs/champions/leesin_LoT.jpg';
+    }
+};
 
-randomizeButton.addEventListener('click', testButton());
-
+randomizeButton.addEventListener('click', changeImage);
 
 // const roles = [jungle, adc, support, top, mid];
 
