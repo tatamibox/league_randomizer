@@ -14,6 +14,9 @@ const leeSin = {
     imageLink: 'imgs/champions/leesin_LoT.jpg'
 }
 const jungle = [amumu, leeSin];
+
+// jungle objects finish
+
 // const adc = [fill in with objects when done];
 // const support = [fill in with objects when done];
 // const top = [fill in with objects when done];
@@ -23,8 +26,9 @@ const jungle = [amumu, leeSin];
 
 
 
-
+const roleSelect = document.querySelector('.roleSelect');
 const randomizeButton = document.querySelector('.randomActivate');
+let currentRole;
 
 // selects a random champion from a large list of champions 
 let currentChamp;
@@ -37,30 +41,51 @@ function randomizeChampionSelected() {
 // changes the champion image on randomizer card based on object link
 function changeChampImg() {
     const champImg = document.getElementById("champImg")
-    champImg.src = `${jungle[currentChamp].imageLink}`;
+    champImg.src = `${currentRole[currentChamp].imageLink}`;
 };
 // 
 
 // changes the champion name on randomizer card
 function changeChampName() {
     const currentChampName = document.querySelector('.cardName');
-    currentChampName.innerHTML = `${jungle[currentChamp].champName}`;
+    currentChampName.innerHTML = `${currentRole[currentChamp].champName}`;
 }
 //
 
 // changes the U.GG link under champ info
 function changeChampBuildLink() {
     const currentBuildLink = document.querySelector('.buildURL');
-    currentBuildLink.href = `${jungle[currentChamp].buildsLink}`;
+    currentBuildLink.href = `${currentRole[currentChamp].buildsLink}`;
 }
 
 
 // combines all functions to change what you see on the randomizer card
 function randomizeAll() {
+    if (roleSelect.value === 'jungle') {
+        currentRole = jungle;
+    } else if (roleSelect.value === 'adc') {
+        alert('work in progress for this role');
+        return;
+    } else if (roleSelect.value === 'mid') {
+        alert('work in progress for this role');
+        return;
+    } else if (roleSelect.value === 'top') {
+        alert('work in progress for this role');
+        return;
+    } else if (roleSelect.value === 'support') {
+        alert('work in progress for this role');
+        return;
+    }
+    else {
+        alert('No role is selected, so please select a role.');
+        return;
+    }
     randomizeChampionSelected();
     changeChampImg();
     changeChampName();
     changeChampBuildLink();
+
+
 }
 //
 
