@@ -34,22 +34,36 @@ function randomizeChampionSelected() {
 
 //
 
+// changes the champion image on randomizer card based on object link
 function changeChampImg() {
     const champImg = document.getElementById("champImg")
     champImg.src = `${jungle[currentChamp].imageLink}`;
 };
+// 
 
+// changes the champion name on randomizer card
 function changeChampName() {
     const currentChampName = document.querySelector('.cardName');
     currentChampName.innerHTML = `${jungle[currentChamp].champName}`;
 }
+//
 
+// changes the U.GG link under champ info
+function changeChampBuildLink() {
+    const currentBuildLink = document.querySelector('.buildURL');
+    currentBuildLink.href = `${jungle[currentChamp].buildsLink}`;
+}
+
+
+// combines all functions to change what you see on the randomizer card
 function randomizeAll() {
     randomizeChampionSelected();
     changeChampImg();
     changeChampName();
-
+    changeChampBuildLink();
 }
+//
+
 
 randomizeButton.addEventListener('click', randomizeAll);
 

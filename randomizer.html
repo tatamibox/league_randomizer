@@ -18,7 +18,7 @@
     <!-- navbar start -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
-            <a href="#" class="navbar-brand">League of Tatami</a>
+            <a href="index.html" class="navbar-brand"><span class="d-none d-lg-inline">League of Tatami</span></a>
             <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -44,48 +44,65 @@
     <!-- navbar finish -->
 
     <!-- background img -->
-    <div class="banner-image w-100 vh-100 d-flex align-items-center flex-row justify-content-center">
-        <div class="content text-center">
+    <div class="banner-image vh-100 ">
+
+        <div class="container h-100 text-center">
             <!-- end of background img -->
 
 
-            <div class="container text-center">
 
 
-                <div class="row">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img class="champImg card-img-top" src="imgs/champions/amumu_LoT.jpg" alt="Card image cap"
-                                id='champImg'>
-                            <div class="card-body">
-                                <p class="card-text text-center">Champion Name: <span
-                                        class='cardName'>Amumu</span><br>Position:
-                                    Jungle<br>Builds/Counters: <a href="https://u.gg/lol/champions/amumu/build">U.GG</a>
-                                </p>
-                            </div>
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="champImg card-img-top" src="imgs/champions/amumu_LoT.jpg" alt="Card image cap"
+                            id='champImg'>
+                        <div class="card-body">
+                            <p class="card-text text-center">Champion Name: <span
+                                    class='cardName'>Amumu</span><br>Position:
+                                Jungle<br>Builds/Counters: <a href="https://u.gg/lol/champions/amumu/build"
+                                    class="buildURL">U.GG</a>
+                            </p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card w-100 h-100">
-                            <div class="card-body">
-                                <h5 class="card-title pt-4 pb-3"><span class='emphasized'>Ready to Randomize?</span>
-                                </h5>
-                                <p class="card-text pb-4">Click the button below to see who you are about to
-                                    use to destroy the enemy team!</p>
-                                <a href="#" class="randomActivate btn btn-outline-danger">Button</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">tset</div>
                 </div>
-
-
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class=" card-body">
+                            <h5 class="card-title pt-4 pb-3"><span class='emphasized'>Ready to Randomize?</span>
+                            </h5>
+                            <p class="card-text pb-4">Click the button below to see who you are about to
+                                use to destroy the enemy team!</p>
+                            <a href="#" class="randomActivate btn btn-outline-danger">Button</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Champion Role</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Select which role you want to play.</h5>
+                            <select class="card-text rounded p-2">
+                                <option value="">&lt;--- Select a Role ---&gt;</option>
+                                <option value="allPositions">All Positions</option>
+                                <option value="jungle">Jungle</option>
+                                <option value="top">Top</option>
+                                <option value="mid">Mid</option>
+                                <option value="adc">ADC</option>
+                                <option value="support">Support</option>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
-
         </div>
+
+
+    </div>
+
+
+
+
+    </div>
     </div>
 
 
